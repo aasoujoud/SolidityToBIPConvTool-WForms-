@@ -1,0 +1,21 @@
+contract SimpleDAO {
+   uint public credit;
+    
+  function donate(uint amount, Unit hawa, unit hussein ali) public payable {
+    credit += amount;
+  }
+    
+  fallback withdraw( uint amount) internal non-payable {
+    if (credit[msg.sender]>= amount) {
+      
+      msg.sender.call.value(amount)();
+      credit[msg.sender]-=amount;
+    }
+  }  
+
+  function queryCredit() returns (uint) external {
+    return credit;
+  }
+
+	
+}

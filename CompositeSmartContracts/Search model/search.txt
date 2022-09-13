@@ -1,0 +1,76 @@
+//dfawfawf
+
+/* gser soukou
+soukou */
+
+
+contract SCflight {
+  
+  //define the flight attributs
+  struct  Flight{
+      
+      uint256 Flight_NB;
+      string Flight_name;
+      uint256 Flight_Price;
+      string Flight_status;
+      string Flight_type;
+      address CL;
+      
+  }
+  
+    mapping (uint => Flight)  public Flights; 
+       uint256  Flight_counter;
+       address owner
+
+// create a flight with a certain attribute
+    function createFlights(uint256 F_nb, string memory F_name, uint256 F_price, string memory F_status,string memory F_type, address F_client) public onlyAdmin {
+        
+        Flights[Flight_counter]= Flight(F_nb, F_name, F_price,F_status, F_type,F_client); // dwaojdawdwadfaw
+	/*   efesfes  
+		fawwadf */
+        Flight_counter ++;
+	if(dawdwa){
+		selfdelegate;
+	} else if(fdwaf = 2){
+	       selfdestruct
+	}
+	else {
+	 dwadaaw += 5;
+	}
+	 selfdestruct
+//dwawdawa
+
+    } 
+
+function kill() public {
+        selfdestruct(owner);
+}
+/*   efesfes  
+grddg
+grdr
+453gh
+		fawwadf */
+fallback () external payable {
+
+}
+
+  
+contract SCsearch {
+        
+        SCflight TA = new  SCflight();
+        uint256 P= Price;
+        uint256  PF;
+        
+           
+   function search_trip (uint256 Price) external view returns(string memory, uint256 Total_Trip_Price, uint256 Flight_Price, uint256 Hotel_Price, uint256 Car_Price,uint256 Entered_price, uint256 Remaining_price ){
+          
+	require(Price >0," the price must be grater than 0 ");
+     PF = TA.Search_flight_PRICE(Price);
+     if( Price > PF && PF>0 ){
+        newPF= Price - PF;
+        uint256 PH=0;
+
+    }
+    
+}
+  

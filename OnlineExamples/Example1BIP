@@ -1,0 +1,840 @@
+model Globalmodel
+port type ePort
+connector type SINGLE(syncPort p)
+ define p
+end
+atomic type RDFDM
+export port ePort A0
+export port ePort A1
+export port ePort A2
+export port ePort A3
+export port ePort A4
+export port ePort A5
+
+
+export port ePort B0
+export port ePort B1
+export port ePort B2
+export port ePort B3
+
+
+export port ePort C0
+export port ePort C1
+export port ePort C2
+export port ePort C3
+
+
+export port ePort D0
+export port ePort D1
+export port ePort D2
+export port ePort D3
+
+
+export port ePort E0
+export port ePort E1
+export port ePort E2
+export port ePort E3
+
+
+export port ePort F0
+export port ePort F1
+export port ePort F2
+export port ePort F3
+
+
+export port ePort G0
+export port ePort G1
+export port ePort G2
+export port ePort G3
+export port ePort G4
+export port ePort G5
+export port ePort G6
+
+
+export port ePort H0
+export port ePort H1
+export port ePort H2
+export port ePort H3
+export port ePort H4
+export port ePort H5
+export port ePort H6
+export port ePort H7
+export port ePort H8
+export port ePort H9
+
+
+export port ePort I0
+export port ePort I1
+export port ePort I2
+export port ePort I3
+export port ePort I4
+export port ePort I5
+export port ePort I6
+export port ePort I7
+export port ePort I8
+export port ePort I9
+
+
+export port ePort J0
+export port ePort J1
+export port ePort J2
+export port ePort J3
+export port ePort J4
+export port ePort J5
+export port ePort J6
+export port ePort J7
+export port ePort J8
+export port ePort J9
+export port ePort J10
+export port ePort J11
+export port ePort J12
+export port ePort J13
+export port ePort J14
+export port ePort J15
+export port ePort J16
+export port ePort J17
+export port ePort J18
+export port ePort J19
+export port ePort J20
+export port ePort J21
+export port ePort J22
+
+
+export port ePort K0
+export port ePort K1
+export port ePort K2
+export port ePort K3
+export port ePort K4
+export port ePort K5
+export port ePort K6
+export port ePort K7
+export port ePort K8
+export port ePort K9
+export port ePort K10
+export port ePort K11
+export port ePort K12
+export port ePort K13
+export port ePort K14
+export port ePort K15
+export port ePort K16
+
+
+export port ePort L0
+export port ePort L1
+export port ePort L2
+export port ePort L3
+export port ePort L4
+export port ePort L5
+export port ePort L6
+export port ePort L7
+export port ePort L8
+export port ePort L9
+export port ePort L10
+export port ePort L11
+export port ePort L12
+export port ePort L13
+
+
+export port ePort M0
+export port ePort M1
+export port ePort M2
+export port ePort M3
+export port ePort M4
+export port ePort M5
+export port ePort M6
+export port ePort M7
+export port ePort M8
+export port ePort M9
+export port ePort M10
+export port ePort M11
+export port ePort M12
+export port ePort M13
+export port ePort M14
+export port ePort M15
+export port ePort M16
+export port ePort M17
+export port ePort M18
+export port ePort M19
+export port ePort M20
+
+
+export port ePort N0
+export port ePort N1
+export port ePort N2
+export port ePort N3
+export port ePort N4
+export port ePort N5
+export port ePort N6
+export port ePort N7
+export port ePort N8
+export port ePort N9
+export port ePort N10
+export port ePort N11
+export port ePort N12
+export port ePort N13
+export port ePort N14
+export port ePort N15
+export port ePort N16
+export port ePort N17
+export port ePort N18
+export port ePort N19
+export port ePort N20
+export port ePort N21
+export port ePort N22
+export port ePort N23
+
+
+export port ePort O0
+export port ePort O1
+export port ePort O2
+export port ePort O3
+export port ePort O4
+export port ePort O5
+export port ePort O6
+export port ePort O7
+export port ePort O8
+export port ePort O9
+export port ePort O10
+export port ePort O11
+export port ePort O12
+export port ePort O13
+export port ePort O14
+export port ePort O15
+export port ePort O16
+export port ePort O17
+
+
+export port ePort P0
+export port ePort P1
+export port ePort P2
+export port ePort P3
+export port ePort P4
+export port ePort P5
+export port ePort P6
+export port ePort P7
+export port ePort P8
+export port ePort P9
+export port ePort P10
+export port ePort P11
+export port ePort P12
+export port ePort P13
+export port ePort P14
+export port ePort P15
+export port ePort P16
+export port ePort P17
+export port ePort P18
+export port ePort P19
+export port ePort P20
+export port ePort P21
+export port ePort P22
+export port ePort P23
+export port ePort P24
+export port ePort P25
+
+
+export port ePort Q0
+export port ePort Q1
+export port ePort Q2
+export port ePort Q3
+export port ePort Q4
+export port ePort Q5
+export port ePort Q6
+export port ePort Q7
+export port ePort Q8
+export port ePort Q9
+export port ePort Q10
+export port ePort Q11
+export port ePort Q12
+export port ePort Q13
+export port ePort Q14
+export port ePort Q15
+export port ePort Q16
+export port ePort Q17
+export port ePort Q18
+export port ePort Q19
+export port ePort Q20
+export port ePort Q21
+export port ePort Q22
+export port ePort Q23
+
+
+export port ePort R0
+export port ePort R1
+export port ePort R2
+export port ePort R3
+
+
+export port ePort S0
+export port ePort S1
+export port ePort S2
+
+
+ place function_RDFDM,state_0_RDFDMFunction,state_1_RDFDMFunction,state_2_RDFDMFunction,state_3_RDFDMFunction,Invoke,function_lock,public_lock,state_4_lockFunction,function_setToken,public_setToken,state_5_setTokenFunction,function_setOperatorFeeAcct,public_setOperatorFeeAcct,state_6_setOperatorFeeAcctFunction,function_setManager,public_setManager,state_7_setManagerFunction,function_deleteManager,public_deleteManager,state_8_deleteManagerFunction,function_addCharity,public_addCharity,state_9_addCharityFunction,state_10_addCharityFunction,state_11_addCharityFunction,add___charityCount,function_modifyCharity,public_modifyCharity,Requirecondition_0,NotSatisfied_condition_0,condition_0,state_12_modifyCharityFunction,state_13_modifyCharityFunction,state_14_modifyCharityFunction,function_fiatCollected,public_fiatCollected,Requirecondition_1,NotSatisfied_condition_1,condition_1,add_
+charities[charityCount].fiatBalanceIn__fiat,add_charities[charityCount].fiatCollected__fiat,state_15_fiatCollectedFunction,function_fiatToEth,public_fiatToEth,payable_fiatToEth,Requirecondition_2,NotSatisfied_condition_2,condition_2,Requirecondition_3,NotSatisfied_condition_3,condition_3,add_
+charities[charityCount].fiatToEthPriceAccFiat__fiat,add_charities[charityCount].fiatToEthPriceAccEth_msg.value,sub_charities[charityCount].fiatBalanceIn__fiat,div_uint_tokenCut_msg.value*4_100,div_uint_operatorCut_msg.value*16_100,sub_uint_charityCredit_msg.value__operatorCut__tokenCut,address_sending_ether_transfer_fiatToEth,add_
+charities[charityCount].ethBalance__charityCredit,add_charities[charityCount].ethCredited__charityCredit,state_16_fiatToEthFunction,function_ethToFiat,public_ethToFiat,Requirecondition_4,NotSatisfied_condition_4,condition_4,Requirecondition_5,NotSatisfied_condition_5,condition_5,add_
+charities[charityCount].ethToFiatPriceAccFiat__fiat,add_charities[charityCount].ethToFiatPriceAccEth__eth,sub_charities[charityCount].ethBalance__eth,add_charities[charityCount].fiatBalanceOut__fiat,address_sending_ether_transfer_ethToFiat,state_17_ethToFiatFunction,function_fiatDelivered,public_fiatDelivered,Requirecondition_6,NotSatisfied_condition_6,condition_6,Requirecondition_7,NotSatisfied_condition_7,condition_7,sub_
+charities[_charity].fiatBalanceOut__fiat,add_charities[charityCount].fiatDelivered__fiat,state_18_fiatDeliveredFunction,function_ethDonation,public_ethDonation,payable_ethDonation,Requirecondition_8,NotSatisfied_condition_8,condition_8,Requirecondition_9,NotSatisfied_condition_9,condition_9,div_
+uint_tokenCut_msg.value*1_200,div_uint_operatorCut_msg.value*3_200,address_sending_ether_transfer_ethDonation,add_
+charities[charityCount].ethDonated__charityCredit,add_charities[charityCount].ethBalance__charityCredit,state_19_ethDonationFunction,function_fiatCollectedToEth,public_fiatCollectedToEth,payable_fiatCollectedToEth,Requirecondition_10,NotSatisfied_condition_10,condition_10,Requirecondition_11,NotSatisfied_condition_11,condition_11,add_
+charities[charityCount].fiatCollected__fiat,add_charities[charityCount].fiatToEthPriceAccFiat__fiat,address_sending_ether_transfer_fiatCollectedToEth,state_20_fiatCollectedToEthFunction,state_21_fiatCollectedToEthFunction,function_ethToFiatDelivered,public_ethToFiatDelivered,Requirecondition_12,NotSatisfied_condition_12,condition_12,Requirecondition_13,NotSatisfied_condition_13,condition_13,address_sending_ether_transfer_ethToFiatDelivered,state_22_ethToFiatDeliveredFunction,state_23_ethToFiatDeliveredFunction,function_quickAuditEthCredited,public_quickAuditEthCredited,Requirecondition_14,NotSatisfied_condition_14,condition_14,state_24_quickAuditEthCreditedFunction,state_25_quickAuditEthCreditedFunction,sub__fiatToEthProcessed__fiatCollected__fiatToEthNotProcessed,Ifcondition_0,If_Condition_Not_Satisfied_0,If_Condition_Satisfied_0,state_26_quickAuditEthCreditedFunction,state_27_quickAuditEthCreditedFunction,If_condition_Close_0,Else_0,div__fiatToEthPricePerEth_charities[charityCount].fiatToEthPriceAccFiat*1ether_charities[charityCount].fiatToEthPriceAccEth,div__fiatToEthCreditedFinney__fiatToEthProcessed*1ether_1finney__fiatToEthPricePerEth,div__fiatToEthAfterFeesFinney__fiatToEthCreditedFinney*8_10,div__ethDonatedFinney_charities[charityCount].ethDonated_1finney,div__ethDonatedAfterFeesFinney__ethDonatedFinney*98_100,add__totalEthCreditedFinney__fiatToEthAfterFeesFinney__ethDonatedAfterFeesFinney,div_uint256tecf_charities[charityCount].ethCredited*1ether_1finney,sub__quickDiscrepancy_int256_totalEthCreditedFinney_int256tecf,function_quickAuditFiatDelivered,public_quickAuditFiatDelivered,Requirecondition_15,NotSatisfied_condition_15,condition_15,div_
+_totalEthCreditedFinney_charities[charityCount].ethCredited*1ether_1finney,div__ethNotProcessedFinney_charities[charityCount].ethBalance_1finney,sub__processedEthCreditedFinney__totalEthCreditedFinney__ethNotProcessedFinney,Ifcondition_1,If_Condition_Not_Satisfied_1,If_Condition_Satisfied_1,state_28_quickAuditFiatDeliveredFunction,state_29_quickAuditFiatDeliveredFunction,If_condition_Close_1,Else_1,div__ethToFiatPricePerEth_charities[charityCount].ethToFiatPriceAccFiat*1ether_charities[charityCount].ethToFiatPriceAccEth,div__ethToFiatCreditedFiat__processedEthCreditedFinney*_ethToFiatPricePerEth_1ether_1finney,state_30_quickAuditFiatDeliveredFunction,sub__ethToFiatProcessed__ethToFiatCreditedFiat__ethToFiatNotProcessed,state_31_quickAuditFiatDeliveredFunction,sub__quickDiscrepancy_int256_ethToFiatProcessed_int256_fiatDelivered,function_,payable_,state_32_Function,function_haraKiri,Selfdestruct_0
+initial to invoke
+on A0 from Invoke to function_RDFDM
+on A1 from function_RDFDM to state_0_RDFDMFunction
+on A2 from state_0_RDFDMFunction to state_1_RDFDMFunction
+on A3 from state_1_RDFDMFunction to state_2_RDFDMFunction
+on A4 from state_2_RDFDMFunction to state_3_RDFDMFunction
+on A5 from state_3_RDFDMFunction to Invoke
+
+
+on B0 from Invoke to function_lock
+on B1 from function_lock to public_lock
+on B2 from public_lock to state_4_lockFunction
+on B3 from state_4_lockFunction to Invoke
+
+
+on C0 from Invoke to function_setToken
+on C1 from function_setToken to public_setToken
+on C2 from public_setToken to state_5_setTokenFunction
+on C3 from state_5_setTokenFunction to Invoke
+
+
+on D0 from Invoke to function_setOperatorFeeAcct
+on D1 from function_setOperatorFeeAcct to public_setOperatorFeeAcct
+on D2 from public_setOperatorFeeAcct to state_6_setOperatorFeeAcctFunction
+on D3 from state_6_setOperatorFeeAcctFunction to Invoke
+
+
+on E0 from Invoke to function_setManager
+on E1 from function_setManager to public_setManager
+on E2 from public_setManager to state_7_setManagerFunction
+on E3 from state_7_setManagerFunction to Invoke
+
+
+on F0 from Invoke to function_deleteManager
+on F1 from function_deleteManager to public_deleteManager
+on F2 from public_deleteManager to state_8_deleteManagerFunction
+on F3 from state_8_deleteManagerFunction to Invoke
+
+
+on G0 from Invoke to function_addCharity
+on G1 from function_addCharity to public_addCharity
+on G2 from public_addCharity to state_9_addCharityFunction
+on G3 from state_9_addCharityFunction to state_10_addCharityFunction
+on G4 from state_10_addCharityFunction to state_11_addCharityFunction
+on G5 from state_11_addCharityFunction to add___charityCount
+on G6 from add___charityCount to Invoke
+
+
+on H0 from Invoke to function_modifyCharity
+on H1 from function_modifyCharity to public_modifyCharity
+on H2 from public_modifyCharity to Requirecondition_0
+on H3 from Requirecondition_0 to NotSatisfied_condition_0 provided( condition_0 ) //Please modify condition
+on H4 from NotSatisfied_condition_0 to Invoke
+on H5 from Requirecondition_0 to condition_0 provided( condition_0 ) //Please modify condition
+on H6 from condition_0 to state_12_modifyCharityFunction
+on H7 from state_12_modifyCharityFunction to state_13_modifyCharityFunction
+on H8 from state_13_modifyCharityFunction to state_14_modifyCharityFunction
+on H9 from state_14_modifyCharityFunction to Invoke
+
+
+on I0 from Invoke to function_fiatCollected
+on I1 from function_fiatCollected to public_fiatCollected
+on I2 from public_fiatCollected to Requirecondition_1
+on I3 from Requirecondition_1 to NotSatisfied_condition_1 provided( condition_1 ) //Please modify condition
+on I4 from NotSatisfied_condition_1 to Invoke
+on I5 from Requirecondition_1 to condition_1 provided( condition_1 ) //Please modify condition
+on I6 from condition_1 to add_
+charities[charityCount].fiatBalanceIn__fiat
+on I7 from add_
+charities[charityCount].fiatBalanceIn__fiat to add_charities[charityCount].fiatCollected__fiat
+on I8 from add_charities[charityCount].fiatCollected__fiat to state_15_fiatCollectedFunction
+on I9 from state_15_fiatCollectedFunction to Invoke
+
+
+on J0 from Invoke to function_fiatToEth
+on J1 from function_fiatToEth to public_fiatToEth
+on J2 from public_fiatToEth to payable_fiatToEth
+on J3 from payable_fiatToEth to Requirecondition_2
+on J4 from Requirecondition_2 to NotSatisfied_condition_2 provided( condition_2 ) //Please modify condition
+on J5 from NotSatisfied_condition_2 to Invoke
+on J6 from Requirecondition_2 to condition_2 provided( condition_2 ) //Please modify condition
+on J7 from condition_2 to Requirecondition_3
+on J8 from Requirecondition_3 to NotSatisfied_condition_3 provided( condition_3 ) //Please modify condition
+on J9 from NotSatisfied_condition_3 to Invoke
+on J10 from Requirecondition_3 to condition_3 provided( condition_3 ) //Please modify condition
+on J11 from condition_3 to add_
+charities[charityCount].fiatToEthPriceAccFiat__fiat
+on J12 from add_
+charities[charityCount].fiatToEthPriceAccFiat__fiat to add_charities[charityCount].fiatToEthPriceAccEth_msg.value
+on J13 from add_charities[charityCount].fiatToEthPriceAccEth_msg.value to sub_charities[charityCount].fiatBalanceIn__fiat
+on J14 from sub_charities[charityCount].fiatBalanceIn__fiat to div_uint_tokenCut_msg.value*4_100
+on J15 from div_uint_tokenCut_msg.value*4_100 to div_uint_operatorCut_msg.value*16_100
+on J16 from div_uint_operatorCut_msg.value*16_100 to sub_uint_charityCredit_msg.value__operatorCut__tokenCut
+on J17 from sub_uint_charityCredit_msg.value__operatorCut__tokenCut to address_sending_ether_transfer_fiatToEth
+on J18 from address_sending_ether_transfer_fiatToEth to address_sending_ether_transfer_fiatToEth
+on J19 from address_sending_ether_transfer_fiatToEth to add_
+charities[charityCount].ethBalance__charityCredit
+on J20 from add_
+charities[charityCount].ethBalance__charityCredit to add_charities[charityCount].ethCredited__charityCredit
+on J21 from add_charities[charityCount].ethCredited__charityCredit to state_16_fiatToEthFunction
+on J22 from state_16_fiatToEthFunction to Invoke
+
+
+on K0 from Invoke to function_ethToFiat
+on K1 from function_ethToFiat to public_ethToFiat
+on K2 from public_ethToFiat to Requirecondition_4
+on K3 from Requirecondition_4 to NotSatisfied_condition_4 provided( condition_4 ) //Please modify condition
+on K4 from NotSatisfied_condition_4 to Invoke
+on K5 from Requirecondition_4 to condition_4 provided( condition_4 ) //Please modify condition
+on K6 from condition_4 to Requirecondition_5
+on K7 from Requirecondition_5 to NotSatisfied_condition_5 provided( condition_5 ) //Please modify condition
+on K8 from NotSatisfied_condition_5 to Invoke
+on K9 from Requirecondition_5 to condition_5 provided( condition_5 ) //Please modify condition
+on K10 from condition_5 to add_
+charities[charityCount].ethToFiatPriceAccFiat__fiat
+on K11 from add_
+charities[charityCount].ethToFiatPriceAccFiat__fiat to add_charities[charityCount].ethToFiatPriceAccEth__eth
+on K12 from add_charities[charityCount].ethToFiatPriceAccEth__eth to sub_charities[charityCount].ethBalance__eth
+on K13 from sub_charities[charityCount].ethBalance__eth to add_charities[charityCount].fiatBalanceOut__fiat
+on K14 from add_charities[charityCount].fiatBalanceOut__fiat to address_sending_ether_transfer_ethToFiat
+on K15 from address_sending_ether_transfer_ethToFiat to state_17_ethToFiatFunction
+on K16 from state_17_ethToFiatFunction to Invoke
+
+
+on L0 from Invoke to function_fiatDelivered
+on L1 from function_fiatDelivered to public_fiatDelivered
+on L2 from public_fiatDelivered to Requirecondition_6
+on L3 from Requirecondition_6 to NotSatisfied_condition_6 provided( condition_6 ) //Please modify condition
+on L4 from NotSatisfied_condition_6 to Invoke
+on L5 from Requirecondition_6 to condition_6 provided( condition_6 ) //Please modify condition
+on L6 from condition_6 to Requirecondition_7
+on L7 from Requirecondition_7 to NotSatisfied_condition_7 provided( condition_7 ) //Please modify condition
+on L8 from NotSatisfied_condition_7 to Invoke
+on L9 from Requirecondition_7 to condition_7 provided( condition_7 ) //Please modify condition
+on L10 from condition_7 to sub_
+charities[_charity].fiatBalanceOut__fiat
+on L11 from sub_
+charities[_charity].fiatBalanceOut__fiat to add_charities[charityCount].fiatDelivered__fiat
+on L12 from add_charities[charityCount].fiatDelivered__fiat to state_18_fiatDeliveredFunction
+on L13 from state_18_fiatDeliveredFunction to Invoke
+
+
+on M0 from Invoke to function_ethDonation
+on M1 from function_ethDonation to public_ethDonation
+on M2 from public_ethDonation to payable_ethDonation
+on M3 from payable_ethDonation to Requirecondition_8
+on M4 from Requirecondition_8 to NotSatisfied_condition_8 provided( condition_8 ) //Please modify condition
+on M5 from NotSatisfied_condition_8 to Invoke
+on M6 from Requirecondition_8 to condition_8 provided( condition_8 ) //Please modify condition
+on M7 from condition_8 to Requirecondition_9
+on M8 from Requirecondition_9 to NotSatisfied_condition_9 provided( condition_9 ) //Please modify condition
+on M9 from NotSatisfied_condition_9 to Invoke
+on M10 from Requirecondition_9 to condition_9 provided( condition_9 ) //Please modify condition
+on M11 from condition_9 to div_
+uint_tokenCut_msg.value*1_200
+on M12 from div_
+uint_tokenCut_msg.value*1_200 to div_uint_operatorCut_msg.value*3_200
+on M13 from div_uint_operatorCut_msg.value*3_200 to sub_uint_charityCredit_msg.value__operatorCut__tokenCut
+on M14 from sub_uint_charityCredit_msg.value__operatorCut__tokenCut to address_sending_ether_transfer_ethDonation
+on M15 from address_sending_ether_transfer_ethDonation to address_sending_ether_transfer_ethDonation
+on M16 from address_sending_ether_transfer_ethDonation to add_
+charities[charityCount].ethDonated__charityCredit
+on M17 from add_
+charities[charityCount].ethDonated__charityCredit to add_charities[charityCount].ethBalance__charityCredit
+on M18 from add_charities[charityCount].ethBalance__charityCredit to add_charities[charityCount].ethCredited__charityCredit
+on M19 from add_charities[charityCount].ethCredited__charityCredit to state_19_ethDonationFunction
+on M20 from state_19_ethDonationFunction to Invoke
+
+
+on N0 from Invoke to function_fiatCollectedToEth
+on N1 from function_fiatCollectedToEth to public_fiatCollectedToEth
+on N2 from public_fiatCollectedToEth to payable_fiatCollectedToEth
+on N3 from payable_fiatCollectedToEth to Requirecondition_10
+on N4 from Requirecondition_10 to NotSatisfied_condition_10 provided( condition_10 ) //Please modify condition
+on N5 from NotSatisfied_condition_10 to Invoke
+on N6 from Requirecondition_10 to condition_10 provided( condition_10 ) //Please modify condition
+on N7 from condition_10 to Requirecondition_11
+on N8 from Requirecondition_11 to NotSatisfied_condition_11 provided( condition_11 ) //Please modify condition
+on N9 from NotSatisfied_condition_11 to Invoke
+on N10 from Requirecondition_11 to condition_11 provided( condition_11 ) //Please modify condition
+on N11 from condition_11 to add_
+charities[charityCount].fiatCollected__fiat
+on N12 from add_
+charities[charityCount].fiatCollected__fiat to add_charities[charityCount].fiatToEthPriceAccFiat__fiat
+on N13 from add_charities[charityCount].fiatToEthPriceAccFiat__fiat to add_charities[charityCount].fiatToEthPriceAccEth_msg.value
+on N14 from add_charities[charityCount].fiatToEthPriceAccEth_msg.value to div_uint_tokenCut_msg.value*4_100
+on N15 from div_uint_tokenCut_msg.value*4_100 to div_uint_operatorCut_msg.value*16_100
+on N16 from div_uint_operatorCut_msg.value*16_100 to sub_uint_charityCredit_msg.value__operatorCut__tokenCut
+on N17 from sub_uint_charityCredit_msg.value__operatorCut__tokenCut to address_sending_ether_transfer_fiatCollectedToEth
+on N18 from address_sending_ether_transfer_fiatCollectedToEth to address_sending_ether_transfer_fiatCollectedToEth
+on N19 from address_sending_ether_transfer_fiatCollectedToEth to add_
+charities[charityCount].ethBalance__charityCredit
+on N20 from add_
+charities[charityCount].ethBalance__charityCredit to add_charities[charityCount].ethCredited__charityCredit
+on N21 from add_charities[charityCount].ethCredited__charityCredit to state_20_fiatCollectedToEthFunction
+on N22 from state_20_fiatCollectedToEthFunction to state_21_fiatCollectedToEthFunction
+on N23 from state_21_fiatCollectedToEthFunction to Invoke
+
+
+on O0 from Invoke to function_ethToFiatDelivered
+on O1 from function_ethToFiatDelivered to public_ethToFiatDelivered
+on O2 from public_ethToFiatDelivered to Requirecondition_12
+on O3 from Requirecondition_12 to NotSatisfied_condition_12 provided( condition_12 ) //Please modify condition
+on O4 from NotSatisfied_condition_12 to Invoke
+on O5 from Requirecondition_12 to condition_12 provided( condition_12 ) //Please modify condition
+on O6 from condition_12 to Requirecondition_13
+on O7 from Requirecondition_13 to NotSatisfied_condition_13 provided( condition_13 ) //Please modify condition
+on O8 from NotSatisfied_condition_13 to Invoke
+on O9 from Requirecondition_13 to condition_13 provided( condition_13 ) //Please modify condition
+on O10 from condition_13 to add_
+charities[charityCount].ethToFiatPriceAccFiat__fiat
+on O11 from add_
+charities[charityCount].ethToFiatPriceAccFiat__fiat to add_charities[charityCount].ethToFiatPriceAccEth__eth
+on O12 from add_charities[charityCount].ethToFiatPriceAccEth__eth to sub_charities[charityCount].ethBalance__eth
+on O13 from sub_charities[charityCount].ethBalance__eth to address_sending_ether_transfer_ethToFiatDelivered
+on O14 from address_sending_ether_transfer_ethToFiatDelivered to state_22_ethToFiatDeliveredFunction
+on O15 from state_22_ethToFiatDeliveredFunction to add_charities[charityCount].fiatDelivered__fiat
+on O16 from add_charities[charityCount].fiatDelivered__fiat to state_23_ethToFiatDeliveredFunction
+on O17 from state_23_ethToFiatDeliveredFunction to Invoke
+
+
+on P0 from Invoke to function_quickAuditEthCredited
+on P1 from function_quickAuditEthCredited to public_quickAuditEthCredited
+on P2 from public_quickAuditEthCredited to Requirecondition_14
+on P3 from Requirecondition_14 to NotSatisfied_condition_14 provided( condition_14 ) //Please modify condition
+on P4 from NotSatisfied_condition_14 to Invoke
+on P5 from Requirecondition_14 to condition_14 provided( condition_14 ) //Please modify condition
+on P6 from condition_14 to state_24_quickAuditEthCreditedFunction
+on P7 from state_24_quickAuditEthCreditedFunction to state_25_quickAuditEthCreditedFunction
+on P8 from state_25_quickAuditEthCreditedFunction to sub__fiatToEthProcessed__fiatCollected__fiatToEthNotProcessed
+on P9 from sub__fiatToEthProcessed__fiatCollected__fiatToEthNotProcessed to Ifcondition_0
+on P10 from Ifcondition_0 to If_Condition_Not_Satisfied_0 provided(  charities[charityCount].fiatToEthPriceAccEth==0 ) //Please modify condition
+on P11 from Ifcondition_0 to If_Condition_Satisfied_0 provided(  charities[charityCount].fiatToEthPriceAccEth==0 ) //Please modify condition
+on P12 from If_Condition_Satisfied_0 to state_26_quickAuditEthCreditedFunction
+on P13 from state_26_quickAuditEthCreditedFunction to state_27_quickAuditEthCreditedFunction
+on P14 from state_27_quickAuditEthCreditedFunction to If_condition_Close_0
+on P15 from If_Condition_Not_Satisfied_0 to Else_0
+on P16 from Else_0 to div__fiatToEthPricePerEth_charities[charityCount].fiatToEthPriceAccFiat*1ether_charities[charityCount].fiatToEthPriceAccEth
+on P17 from div__fiatToEthPricePerEth_charities[charityCount].fiatToEthPriceAccFiat*1ether_charities[charityCount].fiatToEthPriceAccEth to div__fiatToEthCreditedFinney__fiatToEthProcessed*1ether_1finney__fiatToEthPricePerEth
+on P18 from div__fiatToEthCreditedFinney__fiatToEthProcessed*1ether_1finney__fiatToEthPricePerEth to div__fiatToEthAfterFeesFinney__fiatToEthCreditedFinney*8_10
+on P19 from div__fiatToEthAfterFeesFinney__fiatToEthCreditedFinney*8_10 to If_condition_Close_0
+on P20 from If_condition_Close_0 to div__ethDonatedFinney_charities[charityCount].ethDonated_1finney
+on P21 from div__ethDonatedFinney_charities[charityCount].ethDonated_1finney to div__ethDonatedAfterFeesFinney__ethDonatedFinney*98_100
+on P22 from div__ethDonatedAfterFeesFinney__ethDonatedFinney*98_100 to add__totalEthCreditedFinney__fiatToEthAfterFeesFinney__ethDonatedAfterFeesFinney
+on P23 from add__totalEthCreditedFinney__fiatToEthAfterFeesFinney__ethDonatedAfterFeesFinney to div_uint256tecf_charities[charityCount].ethCredited*1ether_1finney
+on P24 from div_uint256tecf_charities[charityCount].ethCredited*1ether_1finney to sub__quickDiscrepancy_int256_totalEthCreditedFinney_int256tecf
+on P25 from sub__quickDiscrepancy_int256_totalEthCreditedFinney_int256tecf to Invoke
+
+
+on Q0 from Invoke to function_quickAuditFiatDelivered
+on Q1 from function_quickAuditFiatDelivered to public_quickAuditFiatDelivered
+on Q2 from public_quickAuditFiatDelivered to Requirecondition_15
+on Q3 from Requirecondition_15 to NotSatisfied_condition_15 provided( condition_15 ) //Please modify condition
+on Q4 from NotSatisfied_condition_15 to Invoke
+on Q5 from Requirecondition_15 to condition_15 provided( condition_15 ) //Please modify condition
+on Q6 from condition_15 to div_
+_totalEthCreditedFinney_charities[charityCount].ethCredited*1ether_1finney
+on Q7 from div_
+_totalEthCreditedFinney_charities[charityCount].ethCredited*1ether_1finney to div__ethNotProcessedFinney_charities[charityCount].ethBalance_1finney
+on Q8 from div__ethNotProcessedFinney_charities[charityCount].ethBalance_1finney to sub__processedEthCreditedFinney__totalEthCreditedFinney__ethNotProcessedFinney
+on Q9 from sub__processedEthCreditedFinney__totalEthCreditedFinney__ethNotProcessedFinney to Ifcondition_1
+on Q10 from Ifcondition_1 to If_Condition_Not_Satisfied_1 provided(  charities[charityCount].ethToFiatPriceAccEth==0 ) //Please modify condition
+on Q11 from Ifcondition_1 to If_Condition_Satisfied_1 provided(  charities[charityCount].ethToFiatPriceAccEth==0 ) //Please modify condition
+on Q12 from If_Condition_Satisfied_1 to state_28_quickAuditFiatDeliveredFunction
+on Q13 from state_28_quickAuditFiatDeliveredFunction to state_29_quickAuditFiatDeliveredFunction
+on Q14 from state_29_quickAuditFiatDeliveredFunction to If_condition_Close_1
+on Q15 from If_Condition_Not_Satisfied_1 to Else_1
+on Q16 from Else_1 to div__ethToFiatPricePerEth_charities[charityCount].ethToFiatPriceAccFiat*1ether_charities[charityCount].ethToFiatPriceAccEth
+on Q17 from div__ethToFiatPricePerEth_charities[charityCount].ethToFiatPriceAccFiat*1ether_charities[charityCount].ethToFiatPriceAccEth to div__ethToFiatCreditedFiat__processedEthCreditedFinney*_ethToFiatPricePerEth_1ether_1finney
+on Q18 from div__ethToFiatCreditedFiat__processedEthCreditedFinney*_ethToFiatPricePerEth_1ether_1finney to If_condition_Close_1
+on Q19 from If_condition_Close_1 to state_30_quickAuditFiatDeliveredFunction
+on Q20 from state_30_quickAuditFiatDeliveredFunction to sub__ethToFiatProcessed__ethToFiatCreditedFiat__ethToFiatNotProcessed
+on Q21 from sub__ethToFiatProcessed__ethToFiatCreditedFiat__ethToFiatNotProcessed to state_31_quickAuditFiatDeliveredFunction
+on Q22 from state_31_quickAuditFiatDeliveredFunction to sub__quickDiscrepancy_int256_ethToFiatProcessed_int256_fiatDelivered
+on Q23 from sub__quickDiscrepancy_int256_ethToFiatProcessed_int256_fiatDelivered to Invoke
+
+
+on R0 from Invoke to function_
+on R1 from function_ to payable_
+on R2 from payable_ to state_32_Function
+on R3 from state_32_Function to Invoke
+
+
+on S0 from Invoke to function_haraKiri
+on S1 from function_haraKiri to Selfdestruct_0
+on S2 from Selfdestruct_0 to Invoke
+
+
+end
+compound type globModel
+component RDFDM RDFDM1
+connector SINGLE RDFDM1_A0(RDFDM1.A0)
+connector SINGLE RDFDM1_A1(RDFDM1.A1)
+connector SINGLE RDFDM1_A2(RDFDM1.A2)
+connector SINGLE RDFDM1_A3(RDFDM1.A3)
+connector SINGLE RDFDM1_A4(RDFDM1.A4)
+connector SINGLE RDFDM1_A5(RDFDM1.A5)
+
+
+connector SINGLE RDFDM1_B0(RDFDM1.B0)
+connector SINGLE RDFDM1_B1(RDFDM1.B1)
+connector SINGLE RDFDM1_B2(RDFDM1.B2)
+connector SINGLE RDFDM1_B3(RDFDM1.B3)
+
+
+connector SINGLE RDFDM1_C0(RDFDM1.C0)
+connector SINGLE RDFDM1_C1(RDFDM1.C1)
+connector SINGLE RDFDM1_C2(RDFDM1.C2)
+connector SINGLE RDFDM1_C3(RDFDM1.C3)
+
+
+connector SINGLE RDFDM1_D0(RDFDM1.D0)
+connector SINGLE RDFDM1_D1(RDFDM1.D1)
+connector SINGLE RDFDM1_D2(RDFDM1.D2)
+connector SINGLE RDFDM1_D3(RDFDM1.D3)
+
+
+connector SINGLE RDFDM1_E0(RDFDM1.E0)
+connector SINGLE RDFDM1_E1(RDFDM1.E1)
+connector SINGLE RDFDM1_E2(RDFDM1.E2)
+connector SINGLE RDFDM1_E3(RDFDM1.E3)
+
+
+connector SINGLE RDFDM1_F0(RDFDM1.F0)
+connector SINGLE RDFDM1_F1(RDFDM1.F1)
+connector SINGLE RDFDM1_F2(RDFDM1.F2)
+connector SINGLE RDFDM1_F3(RDFDM1.F3)
+
+
+connector SINGLE RDFDM1_G0(RDFDM1.G0)
+connector SINGLE RDFDM1_G1(RDFDM1.G1)
+connector SINGLE RDFDM1_G2(RDFDM1.G2)
+connector SINGLE RDFDM1_G3(RDFDM1.G3)
+connector SINGLE RDFDM1_G4(RDFDM1.G4)
+connector SINGLE RDFDM1_G5(RDFDM1.G5)
+connector SINGLE RDFDM1_G6(RDFDM1.G6)
+
+
+connector SINGLE RDFDM1_H0(RDFDM1.H0)
+connector SINGLE RDFDM1_H1(RDFDM1.H1)
+connector SINGLE RDFDM1_H2(RDFDM1.H2)
+connector SINGLE RDFDM1_H3(RDFDM1.H3)
+connector SINGLE RDFDM1_H4(RDFDM1.H4)
+connector SINGLE RDFDM1_H5(RDFDM1.H5)
+connector SINGLE RDFDM1_H6(RDFDM1.H6)
+connector SINGLE RDFDM1_H7(RDFDM1.H7)
+connector SINGLE RDFDM1_H8(RDFDM1.H8)
+connector SINGLE RDFDM1_H9(RDFDM1.H9)
+
+
+connector SINGLE RDFDM1_I0(RDFDM1.I0)
+connector SINGLE RDFDM1_I1(RDFDM1.I1)
+connector SINGLE RDFDM1_I2(RDFDM1.I2)
+connector SINGLE RDFDM1_I3(RDFDM1.I3)
+connector SINGLE RDFDM1_I4(RDFDM1.I4)
+connector SINGLE RDFDM1_I5(RDFDM1.I5)
+connector SINGLE RDFDM1_I6(RDFDM1.I6)
+connector SINGLE RDFDM1_I7(RDFDM1.I7)
+connector SINGLE RDFDM1_I8(RDFDM1.I8)
+connector SINGLE RDFDM1_I9(RDFDM1.I9)
+
+
+connector SINGLE RDFDM1_J0(RDFDM1.J0)
+connector SINGLE RDFDM1_J1(RDFDM1.J1)
+connector SINGLE RDFDM1_J2(RDFDM1.J2)
+connector SINGLE RDFDM1_J3(RDFDM1.J3)
+connector SINGLE RDFDM1_J4(RDFDM1.J4)
+connector SINGLE RDFDM1_J5(RDFDM1.J5)
+connector SINGLE RDFDM1_J6(RDFDM1.J6)
+connector SINGLE RDFDM1_J7(RDFDM1.J7)
+connector SINGLE RDFDM1_J8(RDFDM1.J8)
+connector SINGLE RDFDM1_J9(RDFDM1.J9)
+connector SINGLE RDFDM1_J10(RDFDM1.J10)
+connector SINGLE RDFDM1_J11(RDFDM1.J11)
+connector SINGLE RDFDM1_J12(RDFDM1.J12)
+connector SINGLE RDFDM1_J13(RDFDM1.J13)
+connector SINGLE RDFDM1_J14(RDFDM1.J14)
+connector SINGLE RDFDM1_J15(RDFDM1.J15)
+connector SINGLE RDFDM1_J16(RDFDM1.J16)
+connector SINGLE RDFDM1_J17(RDFDM1.J17)
+connector SINGLE RDFDM1_J18(RDFDM1.J18)
+connector SINGLE RDFDM1_J19(RDFDM1.J19)
+connector SINGLE RDFDM1_J20(RDFDM1.J20)
+connector SINGLE RDFDM1_J21(RDFDM1.J21)
+connector SINGLE RDFDM1_J22(RDFDM1.J22)
+
+
+connector SINGLE RDFDM1_K0(RDFDM1.K0)
+connector SINGLE RDFDM1_K1(RDFDM1.K1)
+connector SINGLE RDFDM1_K2(RDFDM1.K2)
+connector SINGLE RDFDM1_K3(RDFDM1.K3)
+connector SINGLE RDFDM1_K4(RDFDM1.K4)
+connector SINGLE RDFDM1_K5(RDFDM1.K5)
+connector SINGLE RDFDM1_K6(RDFDM1.K6)
+connector SINGLE RDFDM1_K7(RDFDM1.K7)
+connector SINGLE RDFDM1_K8(RDFDM1.K8)
+connector SINGLE RDFDM1_K9(RDFDM1.K9)
+connector SINGLE RDFDM1_K10(RDFDM1.K10)
+connector SINGLE RDFDM1_K11(RDFDM1.K11)
+connector SINGLE RDFDM1_K12(RDFDM1.K12)
+connector SINGLE RDFDM1_K13(RDFDM1.K13)
+connector SINGLE RDFDM1_K14(RDFDM1.K14)
+connector SINGLE RDFDM1_K15(RDFDM1.K15)
+connector SINGLE RDFDM1_K16(RDFDM1.K16)
+
+
+connector SINGLE RDFDM1_L0(RDFDM1.L0)
+connector SINGLE RDFDM1_L1(RDFDM1.L1)
+connector SINGLE RDFDM1_L2(RDFDM1.L2)
+connector SINGLE RDFDM1_L3(RDFDM1.L3)
+connector SINGLE RDFDM1_L4(RDFDM1.L4)
+connector SINGLE RDFDM1_L5(RDFDM1.L5)
+connector SINGLE RDFDM1_L6(RDFDM1.L6)
+connector SINGLE RDFDM1_L7(RDFDM1.L7)
+connector SINGLE RDFDM1_L8(RDFDM1.L8)
+connector SINGLE RDFDM1_L9(RDFDM1.L9)
+connector SINGLE RDFDM1_L10(RDFDM1.L10)
+connector SINGLE RDFDM1_L11(RDFDM1.L11)
+connector SINGLE RDFDM1_L12(RDFDM1.L12)
+connector SINGLE RDFDM1_L13(RDFDM1.L13)
+
+
+connector SINGLE RDFDM1_M0(RDFDM1.M0)
+connector SINGLE RDFDM1_M1(RDFDM1.M1)
+connector SINGLE RDFDM1_M2(RDFDM1.M2)
+connector SINGLE RDFDM1_M3(RDFDM1.M3)
+connector SINGLE RDFDM1_M4(RDFDM1.M4)
+connector SINGLE RDFDM1_M5(RDFDM1.M5)
+connector SINGLE RDFDM1_M6(RDFDM1.M6)
+connector SINGLE RDFDM1_M7(RDFDM1.M7)
+connector SINGLE RDFDM1_M8(RDFDM1.M8)
+connector SINGLE RDFDM1_M9(RDFDM1.M9)
+connector SINGLE RDFDM1_M10(RDFDM1.M10)
+connector SINGLE RDFDM1_M11(RDFDM1.M11)
+connector SINGLE RDFDM1_M12(RDFDM1.M12)
+connector SINGLE RDFDM1_M13(RDFDM1.M13)
+connector SINGLE RDFDM1_M14(RDFDM1.M14)
+connector SINGLE RDFDM1_M15(RDFDM1.M15)
+connector SINGLE RDFDM1_M16(RDFDM1.M16)
+connector SINGLE RDFDM1_M17(RDFDM1.M17)
+connector SINGLE RDFDM1_M18(RDFDM1.M18)
+connector SINGLE RDFDM1_M19(RDFDM1.M19)
+connector SINGLE RDFDM1_M20(RDFDM1.M20)
+
+
+connector SINGLE RDFDM1_N0(RDFDM1.N0)
+connector SINGLE RDFDM1_N1(RDFDM1.N1)
+connector SINGLE RDFDM1_N2(RDFDM1.N2)
+connector SINGLE RDFDM1_N3(RDFDM1.N3)
+connector SINGLE RDFDM1_N4(RDFDM1.N4)
+connector SINGLE RDFDM1_N5(RDFDM1.N5)
+connector SINGLE RDFDM1_N6(RDFDM1.N6)
+connector SINGLE RDFDM1_N7(RDFDM1.N7)
+connector SINGLE RDFDM1_N8(RDFDM1.N8)
+connector SINGLE RDFDM1_N9(RDFDM1.N9)
+connector SINGLE RDFDM1_N10(RDFDM1.N10)
+connector SINGLE RDFDM1_N11(RDFDM1.N11)
+connector SINGLE RDFDM1_N12(RDFDM1.N12)
+connector SINGLE RDFDM1_N13(RDFDM1.N13)
+connector SINGLE RDFDM1_N14(RDFDM1.N14)
+connector SINGLE RDFDM1_N15(RDFDM1.N15)
+connector SINGLE RDFDM1_N16(RDFDM1.N16)
+connector SINGLE RDFDM1_N17(RDFDM1.N17)
+connector SINGLE RDFDM1_N18(RDFDM1.N18)
+connector SINGLE RDFDM1_N19(RDFDM1.N19)
+connector SINGLE RDFDM1_N20(RDFDM1.N20)
+connector SINGLE RDFDM1_N21(RDFDM1.N21)
+connector SINGLE RDFDM1_N22(RDFDM1.N22)
+connector SINGLE RDFDM1_N23(RDFDM1.N23)
+
+
+connector SINGLE RDFDM1_O0(RDFDM1.O0)
+connector SINGLE RDFDM1_O1(RDFDM1.O1)
+connector SINGLE RDFDM1_O2(RDFDM1.O2)
+connector SINGLE RDFDM1_O3(RDFDM1.O3)
+connector SINGLE RDFDM1_O4(RDFDM1.O4)
+connector SINGLE RDFDM1_O5(RDFDM1.O5)
+connector SINGLE RDFDM1_O6(RDFDM1.O6)
+connector SINGLE RDFDM1_O7(RDFDM1.O7)
+connector SINGLE RDFDM1_O8(RDFDM1.O8)
+connector SINGLE RDFDM1_O9(RDFDM1.O9)
+connector SINGLE RDFDM1_O10(RDFDM1.O10)
+connector SINGLE RDFDM1_O11(RDFDM1.O11)
+connector SINGLE RDFDM1_O12(RDFDM1.O12)
+connector SINGLE RDFDM1_O13(RDFDM1.O13)
+connector SINGLE RDFDM1_O14(RDFDM1.O14)
+connector SINGLE RDFDM1_O15(RDFDM1.O15)
+connector SINGLE RDFDM1_O16(RDFDM1.O16)
+connector SINGLE RDFDM1_O17(RDFDM1.O17)
+
+
+connector SINGLE RDFDM1_P0(RDFDM1.P0)
+connector SINGLE RDFDM1_P1(RDFDM1.P1)
+connector SINGLE RDFDM1_P2(RDFDM1.P2)
+connector SINGLE RDFDM1_P3(RDFDM1.P3)
+connector SINGLE RDFDM1_P4(RDFDM1.P4)
+connector SINGLE RDFDM1_P5(RDFDM1.P5)
+connector SINGLE RDFDM1_P6(RDFDM1.P6)
+connector SINGLE RDFDM1_P7(RDFDM1.P7)
+connector SINGLE RDFDM1_P8(RDFDM1.P8)
+connector SINGLE RDFDM1_P9(RDFDM1.P9)
+connector SINGLE RDFDM1_P10(RDFDM1.P10)
+connector SINGLE RDFDM1_P11(RDFDM1.P11)
+connector SINGLE RDFDM1_P12(RDFDM1.P12)
+connector SINGLE RDFDM1_P13(RDFDM1.P13)
+connector SINGLE RDFDM1_P14(RDFDM1.P14)
+connector SINGLE RDFDM1_P15(RDFDM1.P15)
+connector SINGLE RDFDM1_P16(RDFDM1.P16)
+connector SINGLE RDFDM1_P17(RDFDM1.P17)
+connector SINGLE RDFDM1_P18(RDFDM1.P18)
+connector SINGLE RDFDM1_P19(RDFDM1.P19)
+connector SINGLE RDFDM1_P20(RDFDM1.P20)
+connector SINGLE RDFDM1_P21(RDFDM1.P21)
+connector SINGLE RDFDM1_P22(RDFDM1.P22)
+connector SINGLE RDFDM1_P23(RDFDM1.P23)
+connector SINGLE RDFDM1_P24(RDFDM1.P24)
+connector SINGLE RDFDM1_P25(RDFDM1.P25)
+
+
+connector SINGLE RDFDM1_Q0(RDFDM1.Q0)
+connector SINGLE RDFDM1_Q1(RDFDM1.Q1)
+connector SINGLE RDFDM1_Q2(RDFDM1.Q2)
+connector SINGLE RDFDM1_Q3(RDFDM1.Q3)
+connector SINGLE RDFDM1_Q4(RDFDM1.Q4)
+connector SINGLE RDFDM1_Q5(RDFDM1.Q5)
+connector SINGLE RDFDM1_Q6(RDFDM1.Q6)
+connector SINGLE RDFDM1_Q7(RDFDM1.Q7)
+connector SINGLE RDFDM1_Q8(RDFDM1.Q8)
+connector SINGLE RDFDM1_Q9(RDFDM1.Q9)
+connector SINGLE RDFDM1_Q10(RDFDM1.Q10)
+connector SINGLE RDFDM1_Q11(RDFDM1.Q11)
+connector SINGLE RDFDM1_Q12(RDFDM1.Q12)
+connector SINGLE RDFDM1_Q13(RDFDM1.Q13)
+connector SINGLE RDFDM1_Q14(RDFDM1.Q14)
+connector SINGLE RDFDM1_Q15(RDFDM1.Q15)
+connector SINGLE RDFDM1_Q16(RDFDM1.Q16)
+connector SINGLE RDFDM1_Q17(RDFDM1.Q17)
+connector SINGLE RDFDM1_Q18(RDFDM1.Q18)
+connector SINGLE RDFDM1_Q19(RDFDM1.Q19)
+connector SINGLE RDFDM1_Q20(RDFDM1.Q20)
+connector SINGLE RDFDM1_Q21(RDFDM1.Q21)
+connector SINGLE RDFDM1_Q22(RDFDM1.Q22)
+connector SINGLE RDFDM1_Q23(RDFDM1.Q23)
+
+
+connector SINGLE RDFDM1_R0(RDFDM1.R0)
+connector SINGLE RDFDM1_R1(RDFDM1.R1)
+connector SINGLE RDFDM1_R2(RDFDM1.R2)
+connector SINGLE RDFDM1_R3(RDFDM1.R3)
+
+
+connector SINGLE RDFDM1_S0(RDFDM1.S0)
+connector SINGLE RDFDM1_S1(RDFDM1.S1)
+connector SINGLE RDFDM1_S2(RDFDM1.S2)
+
+
+end 
+component globModel Root 
+end 

@@ -1,0 +1,166 @@
+pragma solidity ^0.8.0;
+
+import "./PricingSession.sol";
+import "./ABCTreasury.sol";
+import "./helpers/ReentrancyGuard.sol";
+
+
+///@author Medici
+///@title Bounty auction contract for Abacus
+contract BountyAuction{
+
+    PricingSession public session;
+    ABCTreasury public treasury;
+    address public admin;
+    address public ABCToken;
+    uint public nonce;
+    bool public auctionStatus;
+    bool public firstSession;
+
+    
+
+
+    constructor() {
+        admin = msg.sender;
+        auctionStatus = true;
+    }
+
+    
+    function toggleAuction() external {
+        require(msg.sender == admin);
+        auctionStatus = !auctionStatus;
+        nonce++;
+    }
+
+    function setSessionContract(address _session) external {
+        require(msg.sender == admin);
+        session = PricingSession(payable(_session));
+    }
+
+    function setTreasury(address _treasury) external {
+        require(msg.sender == admin);
+        treasury = ABCTreasury(payable(_treasury));
+    }
+
+    function setToken(address _token) external {
+        require(msg.sender == admin);
+        ABCToken = _token;
+    }
+
+    function setFirst(bool _state) external {
+        require(msg.sender == admin);
+        firstSession = _state;
+    }
+
+
+    ///@notice allow user to submit new bid
+    function newBid(address _nftAddress, uint _tokenid, uint _initailAppraisal) nonReentrant payable external {
+        require(msg.value > highestBid[nonce]&& auctionStatus);
+        bidTime[msg.sender] = block.timestamp;
+        highestBidder[nonce] = msg.sender;
+        highestBid[nonce] = msg.value;
+        tvl[msg.sender] -= userVote[nonce][msg.sender].bid;
+        (bool sent, ) = payable(msg.sender).call{value: userVote[nonce][msg.sender].bid}("");
+        require(sent);
+        userVote[nonce][msg.sender].nftAddress = _nftAddress;
+        userVote[nonce][msg.sender].tokenid = _tokenid;
+        userVote[nonce][msg.sender].intitialAppraisal = _initailAppraisal;
+        userVote[nonce][msg.sender].bid = msg.value;
+        tvl[msg.sender] += msg.value;
+    }
+
+    function changeInfo(address _nftAddress, uint _tokenid, uint _initialAppraisal) external {
+        require(userVote[nonce][msg.sender].nftAddress != address(0));
+        userVote[nonce][msg.sender].nftAddress = _nftAddress;
+        userVote[nonce][msg.sender].tokenid = _tokenid;
+        userVote[nonce][msg.sender].intitialAppraisal = _initialAppraisal;
+    }
+
+    function endAuction() nonReentrant external {
+        if(firstSession){
+            require(msg.sender == admin);
+        }
+        require(endTime[nonce] < block.timestamp && auctionStatus);
+        treasury.sendABCToken(address(this), 0.005 ether * session.ethToAbc());
+        uint bountySend = userVote[nonce][highestBidder[nonce]].bid;
+        userVote[nonce][highestBidder[nonce]].bid = 0;
+        tvl[highestBidder[nonce]] -= bountySend;
+        endTime[++nonce] = block.timestamp + 86400;
+        require(sent);
+    }
+
+    function claim() nonReentrant external {
+        uint returnValue;
+        if(highestBidder[nonce] != msg.sender) {
+            returnValue = tvl[msg.sender];
+        }
+        else {
+            returnValue = tvl[msg.sender] - userVote[nonce][msg.sender].bid;
+        }
+    }
+}
+
+contract DASToken{
+    mapping (address => bool) blockedAccounts;
+    address public secretaryGeneral;
+
+
+    // Constructor
+    function DASToken(
+            string _name,
+            string _symbol,
+            uint8 _decimals,
+            uint256 _totalSupply,
+            address _initialTokensHolder) {
+        secretaryGeneral = msg.sender;
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balances[_initialTokensHolder] = _totalSupply;
+    }
+
+
+    modifier onlySecretaryGeneral {
+        if (msg.sender != secretaryGeneral) throw;
+        _;
+    }
+
+
+    // block account
+    function blockAccount(address _account) onlySecretaryGeneral {
+        blockedAccounts[_account] = true;
+    }
+
+    // unblock account
+    function unblockAccount(address _account) onlySecretaryGeneral {
+        blockedAccounts[_account] = false;
+    }
+
+    // check is account blocked
+    function isAccountBlocked(address _account) returns (bool){
+        return blockedAccounts[_account];
+    }
+
+    // override transfer methods to throw on blocked accounts
+    function transfer(address _to, uint256 _value) returns (bool _success) {
+        if (blockedAccounts[msg.sender]) {
+            throw;
+        }
+        return super.transfer(_to, _value);
+    }
+
+    function transfer(address _to, uint256 _value, bytes _metadata) returns (bool _success) {
+        if (blockedAccounts[msg.sender]) {
+            throw;
+        }
+        return super.transfer(_to, _value, _metadata);
+    }
+
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool _success) {
+        if (blockedAccounts[_from]) {
+            throw;
+        }
+        return super.transferFrom(_from, _to, _value);
+    }
+}

@@ -1,0 +1,257 @@
+model Globalmodel
+port type ePort
+connector type SINGLE(syncPort p)
+ define p
+end
+atomic type gold_game
+export port ePort A0
+export port ePort A1
+export port ePort A2
+export port ePort A3
+export port ePort A4
+export port ePort A5
+export port ePort A6
+export port ePort A7
+export port ePort A8
+export port ePort A9
+export port ePort A10
+export port ePort A11
+export port ePort A12
+export port ePort A13
+export port ePort A14
+export port ePort A15
+export port ePort A16
+export port ePort A17
+export port ePort A18
+export port ePort A19
+export port ePort A20
+export port ePort A21
+export port ePort A22
+export port ePort A23
+export port ePort A24
+export port ePort A25
+export port ePort A26
+export port ePort A27
+export port ePort A28
+export port ePort A29
+export port ePort A30
+export port ePort A31
+
+
+export port ePort B0
+export port ePort B1
+export port ePort B2
+export port ePort B3
+export port ePort B4
+export port ePort B5
+export port ePort B6
+export port ePort B7
+export port ePort B8
+export port ePort B9
+export port ePort B10
+
+
+export port ePort C0
+export port ePort C1
+export port ePort C2
+export port ePort C3
+export port ePort C4
+export port ePort C5
+
+
+export port ePort D0
+export port ePort D1
+export port ePort D2
+export port ePort D3
+export port ePort D4
+export port ePort D5
+export port ePort D6
+export port ePort D7
+export port ePort D8
+export port ePort D9
+export port ePort D10
+export port ePort D11
+
+
+export port ePort E0
+export port ePort E1
+export port ePort E2
+export port ePort E3
+
+
+export port ePort F0
+export port ePort F1
+export port ePort F2
+export port ePort F3
+
+
+ place function_Start,public_Start,payable_Start,Ifcondition_0,If_Condition_Not_Satisfied_0,If_Condition_Satisfied_0,state_0_StartFunction,state_1_StartFunction,mult_c_1_25,If_condition_Close_0,ElseIfcondition_0,ElseIf_Condition_Not_Satisfied_0,ElseIf_Condition_Satisfied_0,state_2_StartFunction,Else_0,add_odkwa_5,WhileLoop_0,WhileLoopCondition_0,WhileLoopCondition_Not_Satisfied_0,WhileLoopCondition_Satisfied_0,state_3_StartFunction,ForLoop_0,Incrementer_0,ForLoopCondition_NotSatisfied_0,ForLoopCondition_Satisfied_0,address_sending_ether_transfer_Start,Invoke,function_Stop,public_Stop,payable_Stop,address_sending_ether_transfer_Stop,Ifcondition_1,If_Condition_Not_Satisfied_1,If_Condition_Satisfied_1,state_4_StopFunction,If_condition_Close_1,function_New,public_New,payable_New,state_5_NewFunction,state_6_NewFunction,function_Try,external_Try,payable_Try,Requirecondition_0,NotSatisfied_tx.origin_0,tx.origin_0,Ifcondition_2,If_Condition_Not_Satisfied_2,If_Condition_Satisfied_2,address_sending_ether_transfer_Try,function_fallback,external_fallback,payable_fallback,function_receive,external_receive,payable_receive
+initial to invoke
+on A0 from Invoke to function_Start
+on A1 from function_Start to public_Start
+on A2 from public_Start to payable_Start
+on A3 from payable_Start to Ifcondition_0
+on A4 from Ifcondition_0 to If_Condition_Not_Satisfied_0 provided(  responseHash==0x0 ) //Please modify condition
+on A5 from Ifcondition_0 to If_Condition_Satisfied_0 provided(  responseHash==0x0 ) //Please modify condition
+on A6 from If_Condition_Satisfied_0 to state_0_StartFunction
+on A7 from state_0_StartFunction to state_1_StartFunction
+on A8 from state_1_StartFunction to mult_c_1_25
+on A9 from mult_c_1_25 to If_condition_Close_0
+on A10 from If_Condition_Not_Satisfied_0 to ElseIfcondition_0
+on A11 from ElseIfcondition_0 to ElseIf_Condition_Not_Satisfied_0 provided(  dwa=24 ) //Please modify condition
+on A12 from ElseIfcondition_0 to ElseIf_Condition_Satisfied_0 provided(  dwa=24 ) //Please modify condition
+on A13 from ElseIf_Condition_Satisfied_0 to state_2_StartFunction
+on A14 from state_2_StartFunction to If_condition_Close_0
+on A15 from ElseIf_Condition_Not_Satisfied_0 to Else_0
+on A16 from Else_0 to add_odkwa_5
+on A17 from add_odkwa_5 to If_condition_Close_0
+on A18 from If_condition_Close_0 to WhileLoop_0
+on A19 from WhileLoop_0 to WhileLoopCondition_0
+on A20 from WhileLoopCondition_0 to WhileLoopCondition_Not_Satisfied_0 provided(  5<1 ) //Please modify condition
+on A21 from WhileLoopCondition_0 to WhileLoopCondition_Satisfied_0 provided(  5<1 ) //Please modify condition
+on A22 from WhileLoopCondition_Satisfied_0 to state_3_StartFunction
+on A23 from state_3_StartFunction to WhileLoopCondition_0
+on A24 from Whileloop_Condition_Not_Satisfied_0 to ForLoop_0
+on A25 from Incrementer_0 to ForLoop_0 do { i++;}
+on A26 from ForLoop_0 to ForLoopCondition_NotSatisfied_0 provided( 234) //Please modify condition
+on A27 from ForLoop_0 to ForLoopCondition_Satisfied_0 provided( 234) //Please modify condition
+on A28 from ForLoopCondition_Satisfied_0 to address_sending_ether_transfer_Start
+on A29 from address_sending_ether_transfer_Start to Incrementer_0
+on A30 from ForLoopCondition_NotSatisfied_0 to address_sending_ether_transfer_Start
+on A31 from address_sending_ether_transfer_Start to Invoke
+
+
+on B0 from Invoke to function_Stop
+on B1 from function_Stop to public_Stop
+on B2 from public_Stop to payable_Stop
+on B3 from payable_Stop to address_sending_ether_transfer_Stop
+on B4 from address_sending_ether_transfer_Stop to Ifcondition_1
+on B5 from Ifcondition_1 to If_Condition_Not_Satisfied_1 provided(  GAGA ) //Please modify condition
+on B6 from Ifcondition_1 to If_Condition_Satisfied_1 provided(  GAGA ) //Please modify condition
+on B7 from If_Condition_Satisfied_1 to state_4_StopFunction
+on B8 from state_4_StopFunction to If_condition_Close_1
+on B9 from If_Condition_Not_Satisfied_1 to If_condition_Close_1
+on B10 from If_condition_Close_1 to Invoke
+
+
+on C0 from Invoke to function_New
+on C1 from function_New to public_New
+on C2 from public_New to payable_New
+on C3 from payable_New to state_5_NewFunction
+on C4 from state_5_NewFunction to state_6_NewFunction
+on C5 from state_6_NewFunction to Invoke
+
+
+on D0 from Invoke to function_Try
+on D1 from function_Try to external_Try
+on D2 from external_Try to payable_Try
+on D3 from payable_Try to Requirecondition_0
+on D4 from Requirecondition_0 to NotSatisfied_tx.origin_0 provided( tx.origin_0 ) //Please modify condition
+on D5 from NotSatisfied_tx.origin_0 to Invoke
+on D6 from Requirecondition_0 to tx.origin_0 provided( tx.origin_0 ) //Please modify condition
+on D7 from tx.origin_0 to Ifcondition_2
+on D8 from Ifcondition_2 to If_Condition_Not_Satisfied_2 provided(  responseHash==keccak256(abi.encode(_response ) //Please modify condition
+on D9 from Ifcondition_2 to If_Condition_Satisfied_2 provided(  responseHash==keccak256(abi.encode(_response ) //Please modify condition
+on D10 from If_Condition_Satisfied_2 to address_sending_ether_transfer_Try
+on D11 from address_sending_ether_transfer_Try to Invoke
+
+
+on E0 from Invoke to function_fallback
+on E1 from function_fallback to external_fallback
+on E2 from external_fallback to payable_fallback
+on E3 from payable_fallback to Invoke
+
+
+on F0 from Invoke to function_receive
+on F1 from function_receive to external_receive
+on F2 from external_receive to payable_receive
+on F3 from payable_receive to Invoke
+
+
+end
+compound type globModel
+component gold_game gold_game1
+connector SINGLE gold_game1_A0(gold_game1.A0)
+connector SINGLE gold_game1_A1(gold_game1.A1)
+connector SINGLE gold_game1_A2(gold_game1.A2)
+connector SINGLE gold_game1_A3(gold_game1.A3)
+connector SINGLE gold_game1_A4(gold_game1.A4)
+connector SINGLE gold_game1_A5(gold_game1.A5)
+connector SINGLE gold_game1_A6(gold_game1.A6)
+connector SINGLE gold_game1_A7(gold_game1.A7)
+connector SINGLE gold_game1_A8(gold_game1.A8)
+connector SINGLE gold_game1_A9(gold_game1.A9)
+connector SINGLE gold_game1_A10(gold_game1.A10)
+connector SINGLE gold_game1_A11(gold_game1.A11)
+connector SINGLE gold_game1_A12(gold_game1.A12)
+connector SINGLE gold_game1_A13(gold_game1.A13)
+connector SINGLE gold_game1_A14(gold_game1.A14)
+connector SINGLE gold_game1_A15(gold_game1.A15)
+connector SINGLE gold_game1_A16(gold_game1.A16)
+connector SINGLE gold_game1_A17(gold_game1.A17)
+connector SINGLE gold_game1_A18(gold_game1.A18)
+connector SINGLE gold_game1_A19(gold_game1.A19)
+connector SINGLE gold_game1_A20(gold_game1.A20)
+connector SINGLE gold_game1_A21(gold_game1.A21)
+connector SINGLE gold_game1_A22(gold_game1.A22)
+connector SINGLE gold_game1_A23(gold_game1.A23)
+connector SINGLE gold_game1_A24(gold_game1.A24)
+connector SINGLE gold_game1_A25(gold_game1.A25)
+connector SINGLE gold_game1_A26(gold_game1.A26)
+connector SINGLE gold_game1_A27(gold_game1.A27)
+connector SINGLE gold_game1_A28(gold_game1.A28)
+connector SINGLE gold_game1_A29(gold_game1.A29)
+connector SINGLE gold_game1_A30(gold_game1.A30)
+connector SINGLE gold_game1_A31(gold_game1.A31)
+
+
+connector SINGLE gold_game1_B0(gold_game1.B0)
+connector SINGLE gold_game1_B1(gold_game1.B1)
+connector SINGLE gold_game1_B2(gold_game1.B2)
+connector SINGLE gold_game1_B3(gold_game1.B3)
+connector SINGLE gold_game1_B4(gold_game1.B4)
+connector SINGLE gold_game1_B5(gold_game1.B5)
+connector SINGLE gold_game1_B6(gold_game1.B6)
+connector SINGLE gold_game1_B7(gold_game1.B7)
+connector SINGLE gold_game1_B8(gold_game1.B8)
+connector SINGLE gold_game1_B9(gold_game1.B9)
+connector SINGLE gold_game1_B10(gold_game1.B10)
+
+
+connector SINGLE gold_game1_C0(gold_game1.C0)
+connector SINGLE gold_game1_C1(gold_game1.C1)
+connector SINGLE gold_game1_C2(gold_game1.C2)
+connector SINGLE gold_game1_C3(gold_game1.C3)
+connector SINGLE gold_game1_C4(gold_game1.C4)
+connector SINGLE gold_game1_C5(gold_game1.C5)
+
+
+connector SINGLE gold_game1_D0(gold_game1.D0)
+connector SINGLE gold_game1_D1(gold_game1.D1)
+connector SINGLE gold_game1_D2(gold_game1.D2)
+connector SINGLE gold_game1_D3(gold_game1.D3)
+connector SINGLE gold_game1_D4(gold_game1.D4)
+connector SINGLE gold_game1_D5(gold_game1.D5)
+connector SINGLE gold_game1_D6(gold_game1.D6)
+connector SINGLE gold_game1_D7(gold_game1.D7)
+connector SINGLE gold_game1_D8(gold_game1.D8)
+connector SINGLE gold_game1_D9(gold_game1.D9)
+connector SINGLE gold_game1_D10(gold_game1.D10)
+connector SINGLE gold_game1_D11(gold_game1.D11)
+
+
+connector SINGLE gold_game1_E0(gold_game1.E0)
+connector SINGLE gold_game1_E1(gold_game1.E1)
+connector SINGLE gold_game1_E2(gold_game1.E2)
+connector SINGLE gold_game1_E3(gold_game1.E3)
+
+
+connector SINGLE gold_game1_F0(gold_game1.F0)
+connector SINGLE gold_game1_F1(gold_game1.F1)
+connector SINGLE gold_game1_F2(gold_game1.F2)
+connector SINGLE gold_game1_F3(gold_game1.F3)
+
+
+end 
+component globModel Root 
+end 

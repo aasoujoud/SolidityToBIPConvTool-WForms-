@@ -18,12 +18,12 @@ Exceptions: (Solidity syntax that are not covered)
 -Require, Delegatecall, etc should all be on the same line.
 
 
-You may use any of the provided smart contracts examples or use the website etherscan.io and try publicly shared contracts, but always keep in mind to follow the above rules. 
+You may use any of the provided smart contracts (under folders CompositeSmartContracts, OnlineExamples, or SimpleSmartContract), or use the website etherscan.io and try publicly shared contracts, but always keep in mind to follow the above rules. 
 Feel free to contact us for any question at:
 aasoujoud@gmail.com
 mohammadmakhour@gmail.com
 Thank you.
 
-SolidityBIPConv is the Console Version(Extra), and SolidityBIPConvForms is the Windows Forms Version.
+SolidityBIPConv is the Console Version(Extra), and SolidityBIPConvForms is the Windows Forms Version. 
 
 ![image](https://user-images.githubusercontent.com/42418822/190000385-bf6084e3-5fd2-46e0-adc0-2084bfa38f36.png)

@@ -24,6 +24,6 @@ aasoujoud@gmail.com
 mohammadmakhour@gmail.com
 Thank you.
 
-SolidityBIPConv is the Console Version, and SolidityBIPConvForms is the Windows Forms Version.
+SolidityBIPConv is the Console Version(Extra), and SolidityBIPConvForms is the Windows Forms Version.
 
 ![image](https://user-images.githubusercontent.com/42418822/190000385-bf6084e3-5fd2-46e0-adc0-2084bfa38f36.png)

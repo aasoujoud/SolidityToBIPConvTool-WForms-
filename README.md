@@ -31,4 +31,6 @@ SolidityBIPConv is the Console Version(Extra), and SolidityBIPConvForms is the W
 
 Video example:
 https://user-images.githubusercontent.com/42418822/194201429-58eac507-7064-4b24-a423-c887ba1bcc7c.mp4
+More about the BIP language: 
+https://www-verimag.imag.fr/The-BIP-Language.html
 

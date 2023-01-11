@@ -18,7 +18,7 @@ Exceptions: (Solidity syntax that are not covered)
 -Require, Delegatecall, etc should all be on the same line.
 
 
-You may use any of the provided smart contracts (under folders CompositeSmartContracts, OnlineExamples, or SimpleSmartContract), or use the website etherscan.io and try publicly shared contracts, but always keep in mind to follow the above rules. 
+This is not the final project, this is the first unenhanced and vanila version of the project. You may use any of the provided smart contracts (under folders CompositeSmartContracts, OnlineExamples, or SimpleSmartContract), or use the website etherscan.io and try publicly shared contracts, but always keep in mind to follow the above rules. 
 Feel free to contact us for any question at:
 aasoujoud@gmail.com
 mohammadmakhour@gmail.com
